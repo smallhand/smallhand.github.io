@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul li a i {
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2c3e50;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+section {
+    padding: 2rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#home {
+    background-color: #f8f9fa;
+}
+
+#about {
+    background-color: #e9ecef;
+}
+
+#specialty {
+    background-color: #f8f9fa;
+}
+
+#projects {
+    background-color: #e9ecef;
+}
+
+#about p {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.specialty-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.research-areas, .programming-skills {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.research-areas {
+    max-width: 300px;
+}
+
+.programming-skills {
+    max-width: 500px;
+}
+
+.research-areas h3, .programming-skills h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.research-areas ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.research-areas li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.research-areas i {
+    color: #2c3e50;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.skill-item span:first-child {
+    min-width: 120px;
+    text-align: left;
+}
+
+.skill-bar {
+    flex: 1;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    min-width: 300px;
+}
+
+.skill-level {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.skill-level.expert {
+    width: 95%;
+    background-color: #2c3e50;
+}
+
+.skill-level.advanced {
+    width: 80%;
+    background-color: #475969;
+}
+
+.skill-level.intermediate {
+    width: 50%;
+    background-color: #6c757d;
+}
+
+.skill-level.basic {
+    width: 20%;
+    background-color: #adb5bd;
+}
+
+.skill-text {
+    min-width: 50px;
+    text-align: right;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #34495e;
+}
+
+.project-link i {
+    font-size: 1.2rem;
+} 
