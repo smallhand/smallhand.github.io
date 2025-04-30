@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 平滑滾動效果
+    // Scroll to the target section
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            if (targetId === '#projects') return; // 不處理 Projects 的點擊
+            if (targetId === '#projects') return; // not scroll down
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 導航欄高亮當前部分
+    // Navbar highlight the current section
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
 

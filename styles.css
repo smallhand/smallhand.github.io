@@ -266,4 +266,91 @@ p {
 
 .project-link i {
     font-size: 1.2rem;
+}
+
+/* RWD */
+@media screen and (max-width: 1200px) {
+    .specialty-content {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .specialty-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .research-areas, .programming-skills {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .projects-container {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .skill-bar {
+        min-width: 250px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .skill-bar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .projects-container {
+        padding: 0 1rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-link {
+        width: 100%;
+        justify-content: center;
+    }
 } 
