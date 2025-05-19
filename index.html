@@ -1,115 +1,163 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stella</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="#home"><i class="fas fa-home"></i></a></li>
-            <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
-            <li><a href="#specialty"><i class="fas fa-star"></i> Specialty</a></li>
-            <li class="dropdown">
-                <a href="#projects"><i class="fas fa-folder"></i> Projects</a>
-                <div class="dropdown-content">
-                    <a href="guess_number/index.html"><i class="fas fa-gamepad"></i> Guess Number</a>
-                    <a href="pig_game/index.html"><i class="fas fa-dice"></i> Pig Game</a>
-                </div>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#home"><i class="fas fa-home"></i></a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i> About Me</a>
+        </li>
+        <li>
+          <a href="#specialty"><i class="fas fa-star"></i> Specialty</a>
+        </li>
+        <li class="dropdown">
+          <a href="#projects"><i class="fas fa-folder"></i> Projects</a>
+          <div class="dropdown-content">
+            <a href="guess_number/index.html"
+              ><i class="fas fa-gamepad"></i> Guess Number</a
+            >
+            <a href="pig_game/index.html"
+              ><i class="fas fa-dice"></i> Pig Game</a
+            >
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          <div class="dropdown-content">
+            <a href="https://github.com/smallhand" target="_blank"
+              ><i class="fab fa-github"></i> smallhand</a
+            >
+            <a href="www.linkedin.com/in/pei-yu-lee-1b811b330" target="_blank"
+              ><i class="fab fa-linkedin"></i> Stella </a
+            >
+          </div>
+        </li>
+      </ul>
     </nav>
 
     <main>
-        <section id="home">
-            <h1>Welcome to my website</h1>
-            <p>Here is a platform to showcase my projects and skills</p>
-        </section>
+      <section id="home">
+        <h1>Welcome to my website</h1>
+        <p>Here is a platform to showcase my projects and skills</p>
+      </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Stella👋 <br>
-                I was an engineer at Phison. 
-                I'm interested in web development and try to put some of my projects here.
-            </p>
-        </section>
+      <section id="about">
+        <div class="profile-image">
+          <img src="img/smallhand.jpg" alt="Profile Picture">
+        </div>
+        <p>
+          Hi, I'm Stella👋 <br />
+          I was an engineer at Phison. I'm interested in web development and put some of my projects after learning the front-end skills.
+        </p>
+      </section>
 
-        <section id="specialty">
-            <h2>Specialty</h2>
-            <div class="specialty-content">
-                <div class="research-areas">
-                    <h3>Research Fields</h3>
-                    <ul>
-                        <li><i class="fas fa-microchip"></i> NAND Flash Controller</li>
-                        <li><i class="fas fa-code-branch"></i> Linux Kernel</li>
-                    </ul>
-                </div>
-                <div class="programming-skills">
-                    <h3>Programming Skills</h3>
-                    <div class="skill-item">
-                        <span>C/C++</span>
-                        <div class="skill-bar">
-                            <div class="skill-level expert">Expert</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Javascript</span>
-                        <div class="skill-bar">
-                            <div class="skill-level advanced">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-level advanced">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>HTML/CSS</span>
-                        <div class="skill-bar">
-                            <div class="skill-level intermediate">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>React native</span>
-                        <div class="skill-bar">
-                            <div class="skill-level basic">Basic</div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>SQL</span>
-                        <div class="skill-bar">
-                            <div class="skill-level basic">Basic</div>
-                        </div>
-                    </div>
-                </div>
+      <section id="specialty">
+        <h2>Specialty</h2>
+        <div class="specialty-content">
+          <div class="research-areas">
+            <h3>Research Fields</h3>
+            <ul>
+              <li><i class="fas fa-microchip"></i> NAND Flash Controller</li>
+              <li><i class="fas fa-code-branch"></i> Linux Kernel</li>
+            </ul>
+          </div>
+          <div class="programming-skills">
+            <h3>Programming Skills</h3>
+            <div class="skill-item">
+              <span>C/C++</span>
+              <div class="skill-bar">
+                <div class="skill-level expert">Expert</div>
+              </div>
             </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>Guess Number</h3>
-                    <p>A simple guess number game, test your intuition and logic.</p>
-                    <a href="guess_number/index.html" class="project-link">
-                        <i class="fas fa-gamepad"></i> Start Game
-                    </a>
-                </div>
-                <div class="project-card">
-                    <h3>Pig Game</h3>
-                    <p>Classic dice game, test your strategy and luck.</p>
-                    <a href="pig_game/index.html" class="project-link">
-                        <i class="fas fa-dice"></i> Start Game
-                    </a>
-                </div>
+            <div class="skill-item">
+              <span>Javascript</span>
+              <div class="skill-bar">
+                <div class="skill-level advanced">Advanced</div>
+              </div>
             </div>
-        </section>
+            <div class="skill-item">
+              <span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-level advanced">Advanced</div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>HTML/CSS</span>
+              <div class="skill-bar">
+                <div class="skill-level intermediate">Intermediate</div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>React native</span>
+              <div class="skill-bar">
+                <div class="skill-level basic">Basic</div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>SQL</span>
+              <div class="skill-bar">
+                <div class="skill-level basic">Basic</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <h3>Guess Number</h3>
+            <p>A simple guess number game, test your intuition and logic.</p>
+            <a href="guess_number/index.html" class="project-link">
+              <i class="fas fa-gamepad"></i> Start Game
+            </a>
+          </div>
+          <div class="project-card">
+            <h3>Pig Game</h3>
+            <p>Classic dice game, test your strategy and luck.</p>
+            <a href="pig_game/index.html" class="project-link">
+              <i class="fas fa-dice"></i> Start Game
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <a
+            href="https://github.com/smallhand"
+            target="_blank"
+            class="contact-link"
+          >
+            <i class="fab fa-github"></i>
+            <span> smallhand </span>
+          </a>
+          <a
+            href="www.linkedin.com/in/pei-yu-lee-1b811b330"
+            target="_blank"
+            class="contact-link"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span> Stella </span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
